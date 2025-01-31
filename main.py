@@ -5,14 +5,12 @@ from config import FAISS_INDEX_PATH, SQLITE_DB_PATH, DATASET_PATH
 
 import uvicorn
 
-# Ініціалізуємо базу даних
 sqlite_db = SQLiteDB(SQLITE_DB_PATH)
 faiss_db = FaissVectorDB(DATASET_PATH, FAISS_INDEX_PATH)
 faiss_db.add_cocktails_to_index()
 
 app = FastAPI(title="Cocktail Advisor Chat")
 
-# Додаємо маршрути
 app.include_router(chat_router)
 
 if __name__ == "__main__":

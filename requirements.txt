@@ -1,0 +1,13 @@
+langchain-openai~=0.3.3
+tiktoken~=0.8.0
+langchain-core~=0.3.33
+pandas~=2.2.3
+uvicorn~=0.34.0
+fastapi~=0.115.8
+pydantic~=2.10.6
+faiss-cpu~=1.10.0
+numpy~=1.26.4
+SQLAlchemy~=2.0.37
+langchain-community~=0.3.16
+langchain~=0.3.17
+python-dotenv~=1.0.1
